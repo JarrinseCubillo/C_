@@ -10,9 +10,6 @@ struct Library {
     float price;
 };
 
-void SleepTimer(){
-    sleep(3000);
-}
 void main() {
     struct Library library[100];
     char authorName[30], bookName[30];
@@ -49,7 +46,6 @@ void main() {
             case 2:
                 printf("You have entered the following information:\n ");
                 printf("***********************************");
-                printf("Name Author Pages Price\n");
                 for(cont=0;cont<keepcount;cont++) {
                     printf("Book name: %s\n",library[cont].bookName);
                     printf("Author: %s\n",library[cont].authorName);
